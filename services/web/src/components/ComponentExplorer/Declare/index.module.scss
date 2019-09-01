@@ -1,0 +1,14 @@
+.content {
+  margin-top: 1em;
+}
+
+.declare {
+  & ~ & {
+    margin-top: 3em;
+  }
+}
+
+.summary {
+  color: var(--color-text);
+  cursor: pointer;
+}

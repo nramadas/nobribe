@@ -1,0 +1,32 @@
+.button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--color-primary);
+  box-sizing: border-box;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 36px;
+  letter-spacing: 0.08929em;
+  line-height: 1;
+  min-width: 64px;
+  outline: none;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: var(--color-primary-transparent-08);
+  }
+
+  &:focus {
+    color: var(--color-primary-darker-10);
+    border-color: var(--color-primary-darker-10);
+  }
+}

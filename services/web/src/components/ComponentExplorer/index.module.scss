@@ -1,0 +1,21 @@
+.componentExplorer {
+  padding: 2rem;
+}
+
+.group {
+  background-color: var(--color-body-elevation-2);
+  border-radius: 4px;
+  box-shadow: var(--shadow-elevation-1);
+  padding: 1em;
+}
+
+.section {
+  background-color: var(--color-body-elevation-1);
+  border-radius: 4px;
+  box-shadow: var(--shadow-elevation-1);
+  padding: 1em;
+
+  & ~ & {
+    margin-top: 2rem;
+  }
+}

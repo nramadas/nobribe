@@ -1,0 +1,68 @@
+.circle {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--color-border);
+  box-sizing: border-box;
+  height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.container {
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+
+  &:hover {
+    .hover {
+      background-color: var(--color-hover);
+    }
+  }
+}
+
+.dot {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  height: 0;
+  left: 50%;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  transition: all 0.2s ease;
+  width: 0;
+}
+
+.hover {
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.input {
+  opacity: 0;
+
+  &:checked ~ .circle {
+    border-color: var(--color-primary);
+  }
+
+  &:checked ~ .dot {
+    height: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    width: 10px;
+  }
+}

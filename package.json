@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@types/node": "^12.7.3",
+    "graphql": "^14.5.4",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --trailing-comma all --jsx-bracket-same-line --write",
+      "git add"
+    ]
+  }
+}
